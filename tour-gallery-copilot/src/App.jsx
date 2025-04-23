@@ -33,17 +33,17 @@ function App() {
   };
 
   if (loading) {
-    return <h2>Loading...</h2>;
+    return <h2>Loading...</h2>; // Displays "Loading..." if loading is true
   }
 
   if (error) {
-    return <h2>Error: {error}</h2>;
+    return <h2>Error: {error}</h2>; // Displays an error message if there's an error
   }
 
   return (
     <div className="App">
       <h1>Tours</h1>
-      <Gallery tours={tours} onRemove={removeTour} />
+      <Gallery tours={tours} onRemove={removeTour} /> {/* Renders Gallery with tour data */}
     </div>
   );
 }
