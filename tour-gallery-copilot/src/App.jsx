@@ -44,7 +44,7 @@ function App() {
     return (
       <div className="App">
         <h2>No Tours Left</h2>
-        <button className="btn" onClick={fetchTours}>
+        <button className="refresh-btn" onClick={fetchTours}>
           Refresh
         </button>
       </div>
